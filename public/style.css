@@ -558,6 +558,14 @@ body {
   color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.block {
+  display: block;
+}
+
 .grid {
   display: grid;
 }
@@ -574,7 +582,61 @@ body {
   place-content: center;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.border-slate-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.text-slate-600 {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.placeholder-slate-400::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-slate-400::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-placeholder-opacity));
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+@media (prefers-contrast: more) {
+  .contrast-more\:border-slate-400 {
+    --tw-border-opacity: 1;
+    border-color: rgb(148 163 184 / var(--tw-border-opacity));
+  }
+
+  .contrast-more\:placeholder-slate-500::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgb(100 116 139 / var(--tw-placeholder-opacity));
+  }
+
+  .contrast-more\:placeholder-slate-500::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgb(100 116 139 / var(--tw-placeholder-opacity));
+  }
+
+  .contrast-more\:opacity-100 {
+    opacity: 1;
+  }
 }

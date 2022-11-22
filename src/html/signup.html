@@ -7,9 +7,24 @@
     <title>Sign Up Page!</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
+
   <body class="min-h-screen">
-    <div class="container grid place-content-center h-full">
-      <div class="text-6xl">sign Up</div>
+    <div class="container grid h-full place-content-center">
+      <form method="post" action="/">
+        <label class="block">
+          <span class="block text-sm font-medium text-slate-700"
+            >Social Security Number</span
+          >
+          <input
+            class="border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500"
+          />
+          <p
+            class="mt-2 text-sm text-slate-600 opacity-10 contrast-more:opacity-100"
+          >
+            We need this to steal your identity.
+          </p>
+        </label>
+      </form>
     </div>
   </body>
 </html>
