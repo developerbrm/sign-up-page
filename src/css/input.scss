@@ -6,10 +6,17 @@
   html {
     @apply scroll-smooth;
   }
+
+  img,
+  svg,
+  video {
+    @apply block h-full w-full max-w-full object-cover object-center;
+  }
 }
 
 @layer components {
-  body {
-    @apply bg-slate-900 text-slate-50;
+  .svg-fill {
+    @apply bg-indigo-700;
+    mask-image: url(./images/mail-add.svg);
   }
 }

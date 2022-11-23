@@ -8,22 +8,64 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
 
-  <body class="min-h-screen">
-    <div class="container grid h-full place-content-center">
-      <form method="post" action="/">
-        <label class="block">
-          <span class="block text-sm font-medium text-slate-700"
-            >Social Security Number</span
+  <body class="min-h-screen bg-gradient-to-br from-violet-300 to-violet-600">
+    <div class="container grid h-screen items-center text-slate-800">
+      <form
+        method="post"
+        action="/"
+        class="m-auto w-full max-w-lg rounded-lg bg-slate-100 p-5 shadow-lg"
+      >
+        <div
+          class="mb-2 flex items-center justify-center gap-2 fill-slate-600 text-center text-2xl font-bold text-slate-800"
+        >
+          <div class="svg-fill h-10 w-10"></div>
+          <div>Sign up</div>
+        </div>
+
+        <div class="space-y-4">
+          <label class="block">
+            <div class="mb-1 block text-sm font-medium text-slate-800">
+              Full Name
+            </div>
+            <input
+              required
+              name="name"
+              type="text"
+              placeholder="Please Enter Your Full Name"
+              class="w-full rounded-md border-slate-200 p-1 text-slate-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500"
+            />
+          </label>
+          <label class="block">
+            <div class="mb-1 block text-sm font-medium text-slate-800">
+              Email Address
+            </div>
+            <input
+              required
+              name="email"
+              type="email"
+              placeholder="Please Enter Your Email"
+              class="w-full rounded-md border-slate-200 p-1 text-slate-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500"
+            />
+          </label>
+          <label class="block">
+            <div class="mb-1 block text-sm font-medium text-slate-800">
+              Phone Number
+            </div>
+            <input
+              required
+              name="phone"
+              type="tel"
+              placeholder="Please Enter Your Phone Number"
+              class="w-full rounded-md border-slate-200 p-1 text-slate-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500"
+            />
+          </label>
+          <button
+            type="submit"
+            class="block w-full rounded-md bg-violet-800 p-2 text-center font-bold text-slate-50"
           >
-          <input
-            class="border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500"
-          />
-          <p
-            class="mt-2 text-sm text-slate-600 opacity-10 contrast-more:opacity-100"
-          >
-            We need this to steal your identity.
-          </p>
-        </label>
+            Subscribe Me!
+          </button>
+        </div>
       </form>
     </div>
   </body>
