@@ -15,8 +15,7 @@
 }
 
 @layer components {
-  .svg-fill {
-    @apply bg-indigo-700;
+  .svg-mask-image {
     mask-image: url(./images/mail-add.svg);
   }
 }
